@@ -1,0 +1,18 @@
+# Legendary Style
+
+Sistema de gestión de citas para barbería desarrollado en Java Swing.
+
+## Funcionalidades
+- Registrar citas
+- Consultar citas
+- Editar citas
+- Eliminar citas
+
+## Tecnologías utilizadas
+- Java
+- SQLite
+- JDBC
+- Java Swing
+
+## Autor
+Juan Felipe Velasco Arrigui
