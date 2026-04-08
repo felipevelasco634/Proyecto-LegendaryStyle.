@@ -6,6 +6,8 @@ import javax.swing.SpinnerDateModel;
 import modelo.CitaDAO;
 import modelo.Cita;
 
+// Ventana para modificar una cita existente
+// Evento para actualizar la cita
 public class ModificarCita extends javax.swing.JPanel {
 
     public int idCita = 0;

@@ -3,7 +3,7 @@ package vista;
 
  import java.awt.BorderLayout; 
 
-
+// Ventana principal del sistema
 public class MenuPrincipal extends javax.swing.JFrame {
 
   
@@ -31,12 +31,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
         ImgPerfil = new javax.swing.JLabel();
         lblCorreo = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        btnCerrar = new javax.swing.JButton();
+        btnRegistar = new javax.swing.JButton();
+        btnConsultar = new javax.swing.JButton();
+        btnConfigurar = new javax.swing.JButton();
+        btnReportes = new javax.swing.JButton();
+        btnPerfil = new javax.swing.JButton();
         PanelDerecho = new javax.swing.JPanel();
         ImagenFondo = new javax.swing.JLabel();
 
@@ -90,77 +90,77 @@ public class MenuPrincipal extends javax.swing.JFrame {
         lblNombre.setText("Nombre");
         PanelIzquierdo.add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 539, -1, 40));
 
-        jButton1.setBackground(new java.awt.Color(219, 175, 55));
-        jButton1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Cerrar Sesion");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCerrar.setBackground(new java.awt.Color(219, 175, 55));
+        btnCerrar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        btnCerrar.setForeground(new java.awt.Color(0, 0, 0));
+        btnCerrar.setText("Cerrar Sesion");
+        btnCerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCerrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCerrarActionPerformed(evt);
             }
         });
-        PanelIzquierdo.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, 160, 40));
+        PanelIzquierdo.add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, 160, 40));
 
-        jButton2.setBackground(new java.awt.Color(219, 175, 55));
-        jButton2.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setText("Registrar Citas");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistar.setBackground(new java.awt.Color(219, 175, 55));
+        btnRegistar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        btnRegistar.setForeground(new java.awt.Color(0, 0, 0));
+        btnRegistar.setText("Registrar Citas");
+        btnRegistar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRegistar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnRegistarActionPerformed(evt);
             }
         });
-        PanelIzquierdo.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 202, 45));
+        PanelIzquierdo.add(btnRegistar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 202, 45));
 
-        jButton3.setBackground(new java.awt.Color(219, 175, 55));
-        jButton3.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
-        jButton3.setText("Consultar Citas");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnConsultar.setBackground(new java.awt.Color(219, 175, 55));
+        btnConsultar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        btnConsultar.setForeground(new java.awt.Color(0, 0, 0));
+        btnConsultar.setText("Consultar Citas");
+        btnConsultar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnConsultar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnConsultarActionPerformed(evt);
             }
         });
-        PanelIzquierdo.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 202, 45));
+        PanelIzquierdo.add(btnConsultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 202, 45));
 
-        jButton4.setBackground(new java.awt.Color(219, 175, 55));
-        jButton4.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(0, 0, 0));
-        jButton4.setText("Configurar Horarios");
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnConfigurar.setBackground(new java.awt.Color(219, 175, 55));
+        btnConfigurar.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        btnConfigurar.setForeground(new java.awt.Color(0, 0, 0));
+        btnConfigurar.setText("Configurar Horarios");
+        btnConfigurar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnConfigurar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnConfigurarActionPerformed(evt);
             }
         });
-        PanelIzquierdo.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 202, 45));
+        PanelIzquierdo.add(btnConfigurar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 202, 45));
 
-        jButton5.setBackground(new java.awt.Color(219, 175, 55));
-        jButton5.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(0, 0, 0));
-        jButton5.setText("Reportes");
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnReportes.setBackground(new java.awt.Color(219, 175, 55));
+        btnReportes.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        btnReportes.setForeground(new java.awt.Color(0, 0, 0));
+        btnReportes.setText("Reportes");
+        btnReportes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnReportes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btnReportesActionPerformed(evt);
             }
         });
-        PanelIzquierdo.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 202, 45));
+        PanelIzquierdo.add(btnReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 202, 45));
 
-        jButton6.setBackground(new java.awt.Color(219, 175, 55));
-        jButton6.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(0, 0, 0));
-        jButton6.setText("Perfil");
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnPerfil.setBackground(new java.awt.Color(219, 175, 55));
+        btnPerfil.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        btnPerfil.setForeground(new java.awt.Color(0, 0, 0));
+        btnPerfil.setText("Perfil");
+        btnPerfil.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnPerfil.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnPerfilActionPerformed(evt);
             }
         });
-        PanelIzquierdo.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 202, 45));
+        PanelIzquierdo.add(btnPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 202, 45));
 
         Backgroung.add(PanelIzquierdo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 650));
 
@@ -195,15 +195,17 @@ public class MenuPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    // Evento del botón cerrar sesion
+    private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         Login login = new Login();
         login.setVisible(true);
 
         this.dispose(); 
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCerrarActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    // Evento del botón registrar cita
+    private void btnRegistarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistarActionPerformed
         RegistrarCitas panel = new RegistrarCitas();
 
         PanelDerecho.removeAll();
@@ -211,9 +213,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         PanelDerecho.revalidate();
         PanelDerecho.repaint();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnRegistarActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    // Evento del botón consultar cita
+    private void btnConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultarActionPerformed
         ConsultarCitas panel = new ConsultarCitas();
 
         PanelDerecho.removeAll();
@@ -221,9 +224,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         PanelDerecho.revalidate();
         PanelDerecho.repaint();        
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnConsultarActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    // Evento del botón configurar horarios
+    private void btnConfigurarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfigurarActionPerformed
         ConfigHorarios panel = new ConfigHorarios();
 
         PanelDerecho.removeAll();
@@ -231,9 +235,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         PanelDerecho.revalidate();
         PanelDerecho.repaint();        
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnConfigurarActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    // Evento del botón reportes
+    private void btnReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportesActionPerformed
         Reportes panel = new Reportes();
 
         PanelDerecho.removeAll();
@@ -241,9 +246,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         PanelDerecho.revalidate();
         PanelDerecho.repaint();  
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnReportesActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    // Evento del botón peril
+    private void btnPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPerfilActionPerformed
         PerfilAdmin panel = new PerfilAdmin();
 
         PanelDerecho.removeAll();
@@ -251,7 +257,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         PanelDerecho.revalidate();
         PanelDerecho.repaint(); 
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnPerfilActionPerformed
 
     /**
      * @param args the command line arguments
@@ -296,12 +302,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel PanelIzquierdo;
     private javax.swing.JLabel PerfilAdmin;
     private javax.swing.JLabel Titulo;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton btnCerrar;
+    private javax.swing.JButton btnConfigurar;
+    private javax.swing.JButton btnConsultar;
+    private javax.swing.JButton btnPerfil;
+    private javax.swing.JButton btnRegistar;
+    private javax.swing.JButton btnReportes;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel lblCorreo;

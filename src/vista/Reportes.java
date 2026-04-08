@@ -5,6 +5,8 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.category.DefaultCategoryDataset;
+
+// Clase encargada de generar reportes del sistema
 public class Reportes extends javax.swing.JPanel {
 
     

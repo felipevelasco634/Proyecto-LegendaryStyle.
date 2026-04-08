@@ -1,7 +1,7 @@
 
 package vista;
 
-    
+// Clase que gestiona el inicio de sesión del sistema   
 public class Login extends javax.swing.JFrame {
 
     
@@ -126,6 +126,7 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
+    // Evento del botón iniciar sesión
     private void btnInicioSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioSesionActionPerformed
         MenuPrincipal menu = new MenuPrincipal();
         menu.setVisible(true);

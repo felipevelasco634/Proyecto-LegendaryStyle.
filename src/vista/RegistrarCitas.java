@@ -6,6 +6,7 @@ import modelo.CitaDAO;
 import javax.swing.SpinnerDateModel;
 import javax.swing.JSpinner;
 
+// Ventana para registrar nuevas citas
 public class RegistrarCitas extends javax.swing.JPanel {
 
     private int idCita = 0;
@@ -26,7 +27,7 @@ public class RegistrarCitas extends javax.swing.JPanel {
     private void initComponents() {
 
         textRegistrar = new javax.swing.JLabel();
-        btnBack = new javax.swing.JButton();
+        btnAtras = new javax.swing.JButton();
         textNcliente = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         txtTelefono = new javax.swing.JLabel();
@@ -35,7 +36,7 @@ public class RegistrarCitas extends javax.swing.JPanel {
         cmbServicio = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         txtPrecio = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnRegistarc = new javax.swing.JButton();
         jDateFecha = new com.toedter.calendar.JDateChooser();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -52,16 +53,16 @@ public class RegistrarCitas extends javax.swing.JPanel {
         textRegistrar.setText("Registrar cita");
         add(textRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 300, 40));
 
-        btnBack.setBackground(new java.awt.Color(212, 175, 55));
-        btnBack.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(0, 0, 0));
-        btnBack.setText("<");
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        btnAtras.setBackground(new java.awt.Color(212, 175, 55));
+        btnAtras.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
+        btnAtras.setForeground(new java.awt.Color(0, 0, 0));
+        btnAtras.setText("<");
+        btnAtras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                btnAtrasActionPerformed(evt);
             }
         });
-        add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 57, -1, 30));
+        add(btnAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 57, -1, 30));
 
         textNcliente.setForeground(new java.awt.Color(255, 255, 255));
         textNcliente.setText("Nombre del cliente");
@@ -107,16 +108,16 @@ public class RegistrarCitas extends javax.swing.JPanel {
         });
         add(txtPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, 260, 40));
 
-        jButton1.setBackground(new java.awt.Color(201, 162, 39));
-        jButton1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Registrar cita");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistarc.setBackground(new java.awt.Color(201, 162, 39));
+        btnRegistarc.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
+        btnRegistarc.setForeground(new java.awt.Color(0, 0, 0));
+        btnRegistarc.setText("Registrar cita");
+        btnRegistarc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnRegistarcActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 500, 200, 45));
+        add(btnRegistarc, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 500, 200, 45));
 
         jDateFecha.setBackground(new java.awt.Color(18, 18, 18));
         jDateFecha.setForeground(new java.awt.Color(255, 255, 255));
@@ -139,16 +140,18 @@ public class RegistrarCitas extends javax.swing.JPanel {
         getAccessibleContext().setAccessibleDescription("PanelDerecho\n");
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    // Evento del botón regresar
+    private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
         MenuPrincipal menu = new MenuPrincipal();
         menu.setVisible(true);
 
         javax.swing.SwingUtilities.getWindowAncestor(this).dispose();       
 
          
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_btnAtrasActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    // Evento del botón guardar cita
+    private void btnRegistarcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistarcActionPerformed
         String nombre = txtNombre.getText();
         String telefono = txtTel.getText();
         String servicio = cmbServicio.getSelectedItem().toString();
@@ -167,6 +170,8 @@ public class RegistrarCitas extends javax.swing.JPanel {
         Cita cita = new Cita(0, nombre, telefono, servicio, precio, fecha, hora);
 
         CitaDAO dao = new CitaDAO();
+        
+        // Validar campos antes de guardar
         if (idCita == 0) {
             dao.insertar(cita);
         } else {
@@ -174,7 +179,7 @@ public class RegistrarCitas extends javax.swing.JPanel {
             dao.actualizar(citaEditada);
             idCita = 0;
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnRegistarcActionPerformed
 
     private void txtPrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioActionPerformed
         // TODO add your handling code here:
@@ -182,10 +187,10 @@ public class RegistrarCitas extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnAtras;
+    private javax.swing.JButton btnRegistarc;
     private javax.swing.JComboBox<String> cmbServicio;
     private javax.swing.JLabel fondo;
-    private javax.swing.JButton jButton1;
     private com.toedter.calendar.JDateChooser jDateFecha;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

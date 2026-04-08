@@ -4,7 +4,7 @@ package vista;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerDateModel;
 
-
+// Configuración de horarios disponibles
 public class ConfigHorarios extends javax.swing.JPanel {
 
     

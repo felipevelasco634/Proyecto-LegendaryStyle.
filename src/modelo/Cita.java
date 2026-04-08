@@ -1,5 +1,7 @@
 package modelo;
 
+// Clase que representa la entidad Cita
+// Atributos de la cita como: cliente, fecha, hora, etc.
 public class Cita {
     private int id;
     private String nombre;

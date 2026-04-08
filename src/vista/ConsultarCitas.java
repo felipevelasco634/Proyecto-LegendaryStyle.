@@ -6,6 +6,7 @@ import modelo.CitaDAO;
 import javax.swing.table.DefaultTableModel;
 import java.util.List;
 
+// Ventana para consultar las citas registradas
 public class ConsultarCitas extends javax.swing.JPanel {
 
    
@@ -148,6 +149,7 @@ public class ConsultarCitas extends javax.swing.JPanel {
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 650));
     }// </editor-fold>//GEN-END:initComponents
 
+    // Evento del botón regresar
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         MenuPrincipal menu = new MenuPrincipal();
         menu.setVisible(true);
